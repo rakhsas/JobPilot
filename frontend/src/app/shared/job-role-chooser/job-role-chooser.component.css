@@ -1,0 +1,14 @@
+.candidateRole {
+    background-image: url('./../../../assets/Candidate\ &\ Employers.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.employeeRole {
+    background-image: url('./../../../assets/Candidate\ &\ Employers\(1\).jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+
+}

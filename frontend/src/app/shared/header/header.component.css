@@ -1,0 +1,29 @@
+.app-header {
+    flex: 0 0 auto;
+}
+/* lib-country-list .ipv_dropdown {
+    background-color: aqua !important;
+} */
+::ng-deep .ipv_selected-item {
+    gap: 0.5rem;
+    border: 0px;
+}
+
+::ng-deep .ipv_dropdown:hover .ipv_selected-item {
+    background-color: inherit;
+}
+
+::ng-deep .searchBox input {
+    border-radius: 5px;
+}
+
+::ng-deep .ipv_code-box {
+    display: none;
+}
+::ng-deep .ipv_dial-code {
+    display: none;
+}
+
+::ng-deep .spartan-button-secondary {
+    background-color: wheat;
+}

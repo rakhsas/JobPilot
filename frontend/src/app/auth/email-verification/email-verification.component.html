@@ -1,0 +1,25 @@
+<div class="w-full h-full flex flex-col">
+    <div class="info flex items-center justify-center p-4 w-full">
+      <spartan-avatar src="./../../../assets/logo/briefcase 1.png"></spartan-avatar>
+      <div class="title ml-4">
+        <span class="font-poppins font-semibold capitalize text-xl">jobpilot</span>
+      </div>
+    </div>
+    <div class="flex-grow flex items-center justify-center">
+        <div class="form flex flex-col px-12 w-auto gap-8">
+            <div class="title flex flex-col items-center justify-center mb-4 gap-2">
+                <span class="font-poppins font-medium text-2xl">Email Verification</span>
+                <span class="font-poppins font-normal text-sm text-main-gray-500">We've sent a verification code to <span> emailAddress&#64;gmail.com</span><br> to verify your email address</span>
+            </div>
+            <div class="form-content flex flex-col items-center justify-center w-full gap-6">
+                <div class="inputs gap-3 flex flex-col">
+                    <ng-otp-input #ngOtpInput [config]="config" />
+                </div>
+                <div class="viewAll w-full">
+                    <spartan-button-with-icon iconName="lucideMoveRight" className="bg-main-blue-100 border-[0.5px] text-white font-semibold hover:bg-white hover:text-main-blue-100 font-poppins w-full" iconSize="base" iconPosition="right" text="Verify My Account"/>
+                </div>
+            </div>
+        </div>
+    </div>
+  </div>
+  

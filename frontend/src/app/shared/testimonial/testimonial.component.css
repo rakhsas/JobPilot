@@ -1,0 +1,18 @@
+::ng-deep .ratings .active svg {
+    fill: theme('colors.main.yellow.100');
+}
+
+::ng-deep .quoteIcon svg {
+    fill: theme('colors.main.gray.700');
+    stroke: transparent;
+}
+
+
+::ng-deep .tracker .trackerDot button {
+    background-color: theme('colors.main.lightBlue.200');
+}
+::ng-deep .tracker .active button {
+    background-color: theme('colors.main.blue.200');
+    width: 20px;
+    padding: 5px;
+}

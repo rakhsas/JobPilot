@@ -1,0 +1,23 @@
+<div class="w-full h-full flex flex-col">
+	<div class="info flex items-center justify-center p-4 w-full">
+		<spartan-avatar src="assets/logo/briefcase 1.png" />
+		<div class="title ml-4">
+			<span class="font-poppins font-semibold capitalize text-xl">jobpilot</span>
+		</div>
+	</div>
+	<div class="flex-grow flex items-center justify-center">
+		<div class="form flex flex-col px-12 w-auto gap-4">
+			<div class="title flex flex-col items-start justify-center mb-4 gap-4">
+				<span class="font-poppins font-medium text-2xl">Create Account</span>
+				<div class="routes flex flex-col items-start justify-center gap-2">
+					<span class="font-poppins font-normal text-sm text-main-gray-500">Already have account? <span
+						class="font-poppins text-main-blue-100 font-medium cursor-pointer" routerLink="/auth/login">
+						Log in </span></span>
+				</div>
+			</div>
+			<div class="form-content flex flex-col items-center justify-center w-full gap-4">
+				<Spartan-tabs />
+			</div>
+		</div>
+	</div>
+</div>

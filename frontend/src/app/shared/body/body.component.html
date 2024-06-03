@@ -1,0 +1,114 @@
+<div class="app-body w-full bg-main-gray-100">
+    <div class="section1 xl:mx-60 mx-0 lg:py-24 py-4">
+        <div class="content flex flex-col lg:gap-16 gap-4 p-4 py-9">
+            <div class="top flex lg:justify-between justify-center w-full h-auto">
+                <div class="left flex flex-col gap-8">
+                    <div class="info flex flex-col gap-4">
+                        <div class="title flex flex-col gap-2 md:items-start items-center">
+                            <span class="font-poppins md:text-5xl text-3xl font-medium text-black">Find a job that
+                                suits<br>your interest & skills.</span>
+                        </div>
+                        <div class="description flex flex-col md:items-start items-center relative h-auto">
+                            <span class="font-poppins md:text-base text-sm font-normal text-main-gray-400">Explore a wide range of
+                                opportunities tailored to your passions<br>
+                                Start your journey today and discover the perfect fit for your career aspirations.
+                            </span>
+                        </div>
+                    </div>
+                    <div class="search flex flex-col gap-6">
+                        <div class="div flex bg-white rounded-md p-4 px-8 w-auto justify-between border border-main-gray-200">
+                            <div class="search-inner flex justify-start items-center w-auto">
+                                <div class="searchIcon">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <circle cx="11" cy="11" r="7" stroke="#0A65CC" stroke-width="2" />
+                                        <path d="M20 20L17 17" stroke="#0A65CC" stroke-width="2"
+                                            stroke-linecap="round" />
+                                    </svg>
+                                </div>
+                                <div class="input flex-grow">
+                                    <spartan-input placeHolder="Job title, keyword..." type="text"
+                                        class="w-40 border-0 focus:ring-0 focus-visible:ring-0 focus-visible:ring-offset-0 placeholder:text-lg" />
+                                </div>
+                            </div>
+                            <div class="divider border-[0.5px] h-full border-gray-300 mx-2 rounded-2xl"></div>
+                            <div class="location flex justify-end items-center">
+                                <div class="locationIcon">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M21 10C21 17 12 23 12 23C12 23 3 17 3 10C3 7.61305 3.94821 5.32387 5.63604 3.63604C7.32387 1.94821 9.61305 1 12 1C14.3869 1 16.6761 1.94821 18.364 3.63604C20.0518 5.32387 21 7.61305 21 10Z"
+                                            stroke="#0066FF" stroke-width="1.5" stroke-linecap="round"
+                                            stroke-linejoin="round" />
+                                        <path
+                                            d="M12 13C13.6569 13 15 11.6569 15 10C15 8.34315 13.6569 7 12 7C10.3431 7 9 8.34315 9 10C9 11.6569 10.3431 13 12 13Z"
+                                            stroke="#0066FF" stroke-width="1.5" stroke-linecap="round"
+                                            stroke-linejoin="round" />
+                                    </svg>
+                                </div>
+                                <div class="input flex-grow">
+                                    <spartan-input placeHolder="Your Location" type="text"
+                                        class="w-40 border-0 focus:ring-0 focus-visible:ring-0 focus-visible:ring-offset-0 placeholder:text-lg" />
+                                </div>
+                            </div>
+                            <div class="auth flex">
+                                <spartan-button placeHolder="Find Job"
+                                    class="inline-flex items-center bg-main-blue-100 hover:bg-white hover:border hover:border-main-gray-300 hover:text-main-blue-100 bg-inherit justify-center rounded-sm text-base font-semibold transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:opacity-50 disabled:pointer-events-none ring-offset-background" />
+                            </div>
+                        </div>
+                        <div class="suggestion">
+                            <span class="font-poppins text-sm font-light text-main-gray-500">Suggestion: <span
+                                    class="text-main-gray-600">Designer, Programming, <span
+                                        class="text-main-blue-100 font-medium">Digital Marketing, </span><span>Video,
+                                        Animation.</span></span></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="right hidden lg:block">
+                    <img src="./../../../assets/Illustration.png" class="w-[500px]" alt="person" />
+                </div>
+            </div>
+            <div class="bottom flex flex-col lg:flex-row lg:justify-between items-center gap-4 w-full h-auto">
+                <div class="liveJob square p-4 flex #rounded-sm items-center bg-white hover:bg-main-gray-200 w-9/12 lg:w-1/4 gap-4 order-1">
+                    <div class="box bg-main-lightBlue-100 p-2 w-16 h-16 rounded-lg flex"></div>
+                    <div class="details flex flex-col">
+                        <span class="total text-black">1,75,324</span>
+                        <span class="text-main-gray-500 capitalize">live job</span>
+                    </div>
+                </div>
+                <div class="companies square p-4 flex rounded-lg bg-white hover:bg-main-gray-200 w-9/12 lg:w-1/4 gap-4 order-2">
+                    <div class="box bg-main-lightBlue-100 p-2 w-16 h-16 rounded-lg">
+                    </div>
+                    <div class="details flex flex-col gap-1 p-1">
+                        <span class="total text-black">1,75,324</span>
+                        <span class="text-main-gray-500 capitalize">companies</span>
+                    </div>
+                </div>
+                <div class="candidates square p-4 flex rounded-lg bg-white hover:bg-main-gray-200 w-9/12 lg:w-1/4 gap-4 order-3">
+                    <div class="box bg-main-lightBlue-100 p-2 w-16 h-16 rounded-lg">
+                    </div>
+                    <div class="details flex flex-col gap-1 p-1">
+                        <span class="total text-black">1,75,324</span>
+                        <span class="text-main-gray-500 capitalize">candidates</span>
+                    </div>
+                </div>
+                <div class="newJobs liveJob square p-4 flex rounded-lg bg-white hover:bg-main-gray-200 w-9/12 lg:w-1/4 gap-4 order-4">
+                    <div class="box bg-main-lightBlue-100 p-2 w-16 h-16 rounded-lg">
+                    </div>
+                    <div class="details flex flex-col gap-1 p-1">
+                        <span class="total text-black">1,75,324</span>
+                        <span class="text-main-gray-500 capitalize">new jobs</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<vacancies />
+<app-how-it-works/>
+<categories />
+<featured />
+<companies />
+<testimonial />
+<job-role-chooser/>
+<footer-view />

@@ -1,0 +1,19 @@
+<div class="vacancies w-full bg-white" *ngIf="vacancies">
+    <div class="section2 xl:mx-60 mx-0 lg:py-24">
+        <div class="content flex flex-col lg:gap-16 gap-4 p-4 py-6">
+            <div class="header w-full">
+                <span class="font-poppins text-4xl font-medium text-black capitalize">most popular vacancies</span>
+            </div>
+            <div class="vacanciesList w-full p-1 flex-wrap">
+                <div class="vacancies grid grid-cols-1 gap-x-6 lg:grid-cols-4 justify-center">
+                    <div class="job flex items-center gap-4 p-4" *ngFor="let vacancy of vacancies">
+                        <div class="details flex flex-col">
+                            <span class="font-poppins text-lg font-medium text-black capitalize">{{vacancy.title}}</span>
+                            <span class="font-poppins text-sm font-light text-main-gray-500 capitalize">{{vacancy.openPositions}} Open Positions</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

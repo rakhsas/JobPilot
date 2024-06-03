@@ -1,0 +1,33 @@
+<div class="app-header bg-white">
+    <div class="flex items-center justify-between p-4 mx-0 md:mx-0 xl:mx-60">
+        <div class="left flex gap-10">
+            <div class="info flex items-center">
+                <spartan-avatar src="./../../../assets/logo/briefcase 1.png"></spartan-avatar>
+                <div class="title">
+                    <span class="font-poppins font-medium capitalize">jobpilot</span>
+                </div>
+            </div>
+            <div class="search border border-main-gray-200 rounded-md px-1 md:flex hidden items-stretch gap-1 w-auto">
+                <lib-country-list class="countryList"></lib-country-list>
+                <div class="divider border-[0.5px] border-gray-300 my-2 rounded-2xl"></div>
+                <div class="search-inner flex items-center flex-grow">
+                    <div class="searchIcon">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="11" cy="11" r="7" stroke="#0A65CC" stroke-width="2"/>
+                            <path d="M20 20L17 17" stroke="#0A65CC" stroke-width="2" stroke-linecap="round"/>
+                        </svg>                                                                              
+                    </div>
+                    <div class="input flex-grow">
+                        <spartan-input placeHolder="Job title, keyword, company" type="text" class="w-64 border-0 focus:ring-0 focus-visible:ring-0 focus-visible:ring-offset-0"/>
+                    </div>                                             
+                </div>
+            </div>
+        </div>
+        <div class="right lg:flex hidden">
+            <div class="auth flex gap-2">
+                <spartan-button placeHolder="Signin" class="inline-flex items-center border-[0.5px] text-main-blue-100 border-main-gray-300 hover:bg-inherit bg-inherit justify-center rounded-sm text-base font-semibold transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:opacity-50 disabled:pointer-events-none ring-offset-background" routerLink="/auth/login"/>
+                <spartan-button placeHolder="Post a Jobs" class="inline-flex items-center bg-main-blue-100 hover:bg-main-blue-100 bg-inherit justify-center rounded-sm text-base font-semibold transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:opacity-50 disabled:pointer-events-none ring-offset-background"/>
+            </div>    
+        </div>
+    </div>
+</div>

@@ -1,0 +1,83 @@
+
+/* createAccount */
+.howJobPilotWork .createAccount .profile {
+    padding: 2rem;
+}
+
+.howJobPilotWork .createAccount .profile {
+    background-image: url('./../../../assets/svg/person/add/add.blue.svg');
+    background-size: auto;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.howJobPilotWork .createAccount:hover .profile {
+    background-image: url('./../../../assets/svg/person/add/add.light.svg');
+    background-color: theme('colors.main.blue.100');
+    background-size: auto;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+/* upload resume */
+
+.howJobPilotWork .upload .profile {
+    padding: 2rem;
+}
+
+.howJobPilotWork .upload .profile {
+    background-image: url('./../../../assets/svg/upload/upload.blue.svg');
+    background-size: auto;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.howJobPilotWork .upload:hover .profile {
+    background-image: url('./../../../assets/svg/upload/upload.light.svg');
+    background-color: theme('colors.main.blue.100');
+    background-size: auto;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+/* find suitable job */
+
+.howJobPilotWork .findJob .profile {
+    padding: 2rem;
+}
+
+.howJobPilotWork .findJob .profile {
+    background-image: url('./../../../assets/svg/search/add/search.blue.svg');
+    background-size: auto;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.howJobPilotWork .findJob:hover .profile {
+    background-image: url('./../../../assets/svg/search/add/search.light.svg');
+    background-color: theme('colors.main.blue.100');
+    background-size: auto;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+/* apply for job */
+
+.howJobPilotWork .applyJob .profile {
+    padding: 2rem;
+}
+
+.howJobPilotWork .applyJob .profile {
+    background-image: url('./../../../assets/svg/verify/verify.blue.svg');
+    background-size: auto;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.howJobPilotWork .applyJob:hover .profile {
+    background-image: url('./../../../assets/svg/verify/verify.light.svg');
+    background-color: theme('colors.main.blue.100');
+    background-size: auto;
+    background-repeat: no-repeat;
+    background-position: center;
+}

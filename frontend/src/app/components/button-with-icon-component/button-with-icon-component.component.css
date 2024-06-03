@@ -1,0 +1,6 @@
+::ng-deep spartan-button-with-icon button div {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}

@@ -1,0 +1,10 @@
+<button hlmBtn [class]="className" [disabled]="disable">
+    <div *ngIf="iconPosition === 'left'">
+      <hlm-icon [size]="iconSize" class="mr-2" [name]="iconName" />
+      {{ text }}
+    </div>
+    <div *ngIf="iconPosition === 'right'">
+      {{ text }}
+      <hlm-icon [size]="iconSize" class="ml-2" [name]="iconName" />
+    </div>
+</button>

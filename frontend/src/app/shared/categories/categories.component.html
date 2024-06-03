@@ -1,0 +1,27 @@
+<div class="popularCategory w-full bg-white">
+    <div class="content xl:mx-60 mx-0 lg:py-24 p-4 gap-8 flex flex-col">
+        <div class="header w-full flex justify-between">
+            <div class="text">
+                <span class="font-poppins text-4xl font-medium text-black capitalize">popular category</span>
+            </div>
+            <div class="viewAll">
+                <spartan-button-with-icon iconName="lucideMoveRight" className="bg-white border-[0.5px] text-main-blue-100 font-semibold hover:bg-main-blue-100 hover:text-white font-poppins" iconPosition="right" text="View All"/>
+            </div>
+        </div>
+        <div class="categoriesList w-full flex-wrap">
+            <div class="categories grid grid-cols-1 md:grid-cols-2 gap-6 gap-x-8 lg:grid-cols-3">
+                <div class="" *ngFor="let category of categories">
+                    <div class="category flex w-auto gap-4 items-center mx-auto hover:shadow-md p-4 rounded-lg">
+                        <div class="icon bg-main-lightBlue-100 hover:bg-main-blue-100 p-2 w-16 h-16 rounded-lg flex text-main-blue-100 hover:text-white">
+                            <hlm-icon size="base" name={{category.lucideIconName}} class="m-auto" />
+                        </div>
+                        <div class="details flex flex-col">
+                            <span class="font-poppins text-lg font-medium text-black capitalize">{{category.title}}</span>
+                            <span class="font-poppins text-sm font-light text-main-gray-500 capitalize">{{category.openPositions}} Open Positions</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

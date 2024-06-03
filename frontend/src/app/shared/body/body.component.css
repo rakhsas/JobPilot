@@ -1,0 +1,64 @@
+/* font-style: normal;
+font-weight: 500;
+font-size: 24px; */
+.total {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 27px;
+}
+
+.liveJob {
+    border-radius: 4px;
+
+}
+
+.liveJob:hover .box {
+    background-color: theme('colors.main.blue.100');
+    background-image: url('./../../../assets/svg/bag/bag.light.svg');
+    background-size: auto;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.liveJob .box {
+    background-image: url('./../../../assets/svg/bag/bag.blue.svg');
+    background-size: auto;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.companies:hover .box {
+    background-color: theme('colors.main.blue.100');
+    background-image: url('./../../../assets/svg/building/buildings.light.svg');
+    background-size: auto;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.companies .box {
+    background-image: url('./../../../assets/svg/building/building.blue.svg');
+    background-size: auto;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.candidates:hover .box {
+    background-color: theme('colors.main.blue.100');
+    background-image: url('./../../../assets/svg/candidate/candidate.light.svg');
+    background-size: auto;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.candidates .box {
+    background-image: url('./../../../assets/svg/candidate/canidate.blue.svg');
+    background-size: auto;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+
+::ng-deep spartan-button-with-icon button div {
+    /* background-color: red !important; */
+    display: flex;
+    align-items: center;
+}

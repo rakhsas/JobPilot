@@ -1,0 +1,67 @@
+version: '3.8'
+
+services:
+  # frontend:
+  #   container_name: frontend
+  #   build:
+  #     context: ./frontend
+  #     dockerfile: Dockerfile
+  #   ports:
+  #     - "4200:4200"
+  #   volumes:
+  #     - ./frontend:/app
+  #   networks:
+  #     - network
+  #   restart: always
+  #   depends_on:
+  #     - backend
+  # backend:
+  #   container_name: backend
+  #   build:
+  #     context: ./backend
+  #     dockerfile: Dockerfile
+  #   ports:
+  #     - "8080:8080"
+  #   volumes:
+  #     - ./backend:/app
+  #     # - ./backend/target/demo-0.0.1-SNAPSHOT.jar:/app/demo-0.0.1-SNAPSHOT.jar
+  #   networks:
+  #     - network
+  #   restart: always
+  #   depends_on:
+  #     - postgres
+  postgres:
+    image: postgres:latest
+    container_name: postgres
+    env_file:
+      - .env
+    volumes:
+      - ./postgres:/var/lib/postgresql/data
+    ports:
+      - "5432:5432"
+    networks:
+      - network
+  adminer:
+    image: adminer
+    container_name: adminer
+    ports:
+      - "8081:8080"
+    networks:
+      - network
+    restart: always
+    depends_on:
+      - postgres
+
+volumes:
+  potgres:
+    name: postgres
+    driver: local
+    driver_opts:
+      type: none
+      o: bind
+      device: ${PWD}/postgres
+
+networks:
+  network:
+    driver: bridge
+

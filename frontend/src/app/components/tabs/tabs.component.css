@@ -1,0 +1,5 @@
+hlm-tabs hlm-tabs-list button[data-state="active"] {
+    background-color: theme('colors.main.blue.400');
+    color: white;
+    padding: 0.5rem;
+}
